@@ -1,14 +1,10 @@
 #!/bin/bash
 # eggd_pbtp_url_generator 1.0.0
 
-extract_id_from_delivery_report() {
-    # Extract DNA Nexus ID(s)
-}
 
 main() {
     set -e -x -v -o pipefail
     echo "Path to samples: '$samples'"
-
 
     while IFS= read -r local_id; do
         # Get DNANexus ID from the local ID, by searching for the local in delivery reports. Add to associative array.
